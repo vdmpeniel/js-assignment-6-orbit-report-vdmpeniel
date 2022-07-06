@@ -4,12 +4,13 @@
 }
 
 .warning {
-	background-color: #da8a8a;
+	background-color: #da8a8a !important;
 }
 
 table {
  color: #111;
  border-radius: 5px;
+ border-style: none;
  overflow: hidden;
  margin: 12px 0;
  min-width: 300px;
@@ -25,4 +26,12 @@ th, td {
 	text-align: left;
 	margin: 5px 10px;
 	padding: 6px;
+	border-style: none;
 }
+.table-striped > tr:nth-child(odd) > td {
+    background-color: rgb(206, 223, 248);
+}
+.table-striped > tr:nth-child(even) > td {
+    background-color: rgb(234, 238, 252);
+}
+
